@@ -3,6 +3,12 @@
 A MERN-stack prototype built for the Bits and Volts **Full Stack MERN Intern** task, based on
 hands-on analysis of the live site [naikfoods.co.in/in](https://www.naikfoods.co.in/in).
 
+### Live Demo
+
+- **Frontend:** https://naikfoods-reviews-system.vercel.app
+- **Backend API:** https://naikfoods-reviews-system.onrender.com
+- **GitHub:** https://github.com/Neha-vundavilli2710/naikfoods-reviews-system
+
 ## 1. Project Overview
 
 Naik Foods' product pages display a review count (e.g. "(56 Reviews)") but no actual review
