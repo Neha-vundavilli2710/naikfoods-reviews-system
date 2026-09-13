@@ -160,20 +160,35 @@ or a short screen recording separately if useful.
 
 ## 13. Deployment
 
-**Backend (Render — free tier):**
-1. Push this repo to GitHub.
-2. On [render.com](https://render.com), create a new **Web Service** from the repo, root
-   directory `backend`, build command `npm install`, start command `npm start`.
-3. Add environment variables `MONGO_URI` and `FRONTEND_URL` in Render's dashboard.
+### Backend — Render
 
-**Frontend (Netlify):**
-1. On [netlify.com](https://netlify.com), create a new site from the same GitHub repo.
-2. Base directory `frontend`, build command `npm run build`, publish directory `frontend/dist`.
-3. Add environment variable `VITE_API_URL` set to the deployed Render backend URL + `/api`.
+The backend API is deployed on Render.
 
-**Deploy URL:** _add once deployed_
-**Backend API URL:** _add once deployed_
-**Git repository:** _add your GitHub repo URL_
+- **Platform:** Render
+- **Root directory:** `backend`
+- **Build command:** `npm install`
+- **Start command:** `npm start`
+- **Backend URL:** https://naikfoods-reviews-system.onrender.com
+
+Required environment variables:
+
+- `MONGO_URI`
+- `FRONTEND_URL`
+
+### Frontend — Vercel
+
+The React frontend is deployed on Vercel.
+
+- **Platform:** Vercel
+- **Root directory:** `frontend`
+- **Build command:** `npm run build`
+- **Output directory:** `dist`
+- **API environment variable:** `VITE_API_URL`
+
+Production API configuration:
+
+```text
+VITE_API_URL=https://naikfoods-reviews-system.onrender.com/api
 
 ## 14. Known limitations
 
